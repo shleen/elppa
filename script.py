@@ -65,7 +65,6 @@ if any(v is None for v in [CLIENT_ID, CLIENT_SECRET]):
     print('Could not find required environment variables. Aborting.')
     quit()
 
-if CLIENT_SECRET is
 token = util.prompt_for_user_token(username='spleen', scope='user-library-modify', client_id=CLIENT_ID, client_secret=CLIENT_SECRET, redirect_uri='http://localhost/')
 
 sp = spotipy.Spotify(auth=token)
